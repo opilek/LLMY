@@ -1,0 +1,15 @@
+openai
+python-dotenv
+pydantic>=2,<3
+numpy
+pandas
+torch
+transformers
+sentence-transformers
+faiss-cpu
+rank-bm25
+fastapi
+uvicorn
+httpx
+pytest
+google-genai

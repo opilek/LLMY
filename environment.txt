@@ -1,0 +1,5 @@
+Python: 3.14.3
+System: Windows-11-10.0.26200-SP0
+PyTorch: 2.14.1+cpu
+CUDA dostêpna: False
+Œrodowisko jest gotowe.
