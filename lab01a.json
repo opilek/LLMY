@@ -1,0 +1,47 @@
+{
+  "tokenizer_name": "Qwen/Qwen2.5-0.5B-Instruct",
+  "samples": [
+    {
+      "text": "Opiła",
+      "tokens_count": 3,
+      "token_ids": [46, 2493, 21526],
+      "pieces": ["O", "pi", "ła"]
+    },
+    {
+      "text": "for(int i=0;i<10;i++)",
+      "tokens_count": 11,
+      "token_ids": [1958, 1548, 600, 28, 15, 4696, 27, 16, 15, 4696, 2457],
+      "pieces": ["for", "(int", " i", "=", "0", ";i", "<", "1", "0", ";i", "++)"]
+    },
+    {
+      "text": "127000.999990",
+      "tokens_count": 13,
+      "token_ids": [16, 17, 22, 15, 15, 15, 13, 24, 24, 24, 24, 24, 15],
+      "pieces": ["1", "2", "7", "0", "0", "0", ".", "9", "9", "9", "9", "9", "0"]
+    },
+    {
+      "text": "😍❤️🤣😘👌",
+      "tokens_count": 6,
+      "token_ids": [144251, 141390, 30543, 144736, 144538, 144876],
+      "pieces": ["😍", "❤", "️", "🤣", "😘", "👌"]
+    },
+    {
+      "text": "Mądry żółw przechadza się wzdłuż kępy trawy",
+      "tokens_count": 19,
+      "token_ids": [44, 5861, 53210, 46053, 47392, 86, 548, 25751, 329, 4360, 12662, 289, 48655, 126875, 595, 5156, 3288, 489, 95719],
+      "pieces": ["M", "ą", "dry", " ż", "ół", "w", " pr", "zech", "ad", "za", " się", " w", "zd", "łuż", " k", "ę", "py", " tr", "awy"]
+    },
+    {
+      "text": "Duży model językowy",
+      "tokens_count": 5,
+      "token_ids": [42074, 27206, 1614, 132938, 36875],
+      "pieces": ["Du", "ży", " model", " język", "owy"]
+    },
+    {
+      "text": "Large language model",
+      "tokens_count": 3,
+      "token_ids": [34253, 4128, 1614],
+      "pieces": ["Large", " language", " model"]
+    }
+  ]
+}
