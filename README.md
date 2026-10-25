@@ -40,3 +40,16 @@ bez spacji mogą składać się z wielu tokenów, co uniemożliwia proste przeli
 
 ### Rozwój projektu
 Repozytorium będzie rozwijane w kolejnych laboratoriach
+
+
+## Laboratorium 2
+
+### Różnica pomiędzy logitem, prawdopodobieństwem i wybranym tokenem
+
+Logit - jest to przypisana do konkretnego tokenu liczba która punktuje dany token
+(tworzony jest ranking tokenów z całego słownika)
+
+Prawdopodobieństwo - jest to logit który został przepuszczony przez funkcję Softmax.
+Określa szansę wystąpienia danego tokenu jako następnego w sekwencji
+
+Wybrany token - jest to token który zostaje ostatecznie wybrany jako następny do sekwencji.
