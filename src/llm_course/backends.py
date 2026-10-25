@@ -1,9 +1,8 @@
 import os
 import time
-import json
-from dataclasses import dataclass, asdict
-from datetime import datetime, timezone
+
 from typing import Protocol
+from dataclasses import dataclass
 
 
 @dataclass
@@ -17,21 +16,20 @@ class Generation:
 
 
 class LLMBackend(Protocol):
-    def generate(self, system: str, user: str, max_tokens: int = 160) -> Generation:
+    def generate(self, system: str, user: str, max_tokens: int = 160,
+                 temperature: float = 0.0, top_p: float = 1.0, do_sample: bool = False) -> Generation:
         ...
 
 
 class ApiBackend:
     def __init__(self) -> None:
         from google import genai
-        # OpenAI: from openai import OpenAI
 
         self.model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
         self.client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-        # OpenAI: self.model = os.environ["OPENAI_MODEL"]
-        # OpenAI: self.client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-    def generate(self, system: str, user: str, max_tokens: int = 160) -> Generation:
+    def generate(self, system: str, user: str, max_tokens: int = 160,
+                 temperature: float = 0.0, top_p: float = 1.0, do_sample: bool = False) -> Generation:
         from google.genai import types
 
         started = time.perf_counter()
@@ -41,6 +39,8 @@ class ApiBackend:
             config=types.GenerateContentConfig(
                 system_instruction=system,
                 max_output_tokens=max_tokens,
+                temperature=temperature,
+                top_p=top_p,
             ),
         )
         latency_s = time.perf_counter() - started
@@ -75,7 +75,8 @@ class LocalBackend:
         )
         self.model.to(self.device).eval()
 
-    def generate(self, system: str, user: str, max_tokens: int = 160) -> Generation:
+    def generate(self, system: str, user: str, max_tokens: int = 160,
+                 temperature: float = 0.0, top_p: float = 1.0, do_sample: bool = False) -> Generation:
         started = time.perf_counter()
         messages = [
             {"role": "system", "content": system},
@@ -89,12 +90,20 @@ class LocalBackend:
             return_tensors="pt",
         ).to(self.device)
 
+        # Dynamiczne budowanie parametrów generacji dla Hugging Face
+        gen_kwargs = {
+            "max_new_tokens": max_tokens,
+            "pad_token_id": self.tokenizer.eos_token_id,
+            "do_sample": do_sample,
+        }
+        if do_sample:
+            gen_kwargs["temperature"] = temperature
+            gen_kwargs["top_p"] = top_p
+
         with self.torch.inference_mode():
             output = self.model.generate(
                 **inputs,
-                max_new_tokens=max_tokens,
-                do_sample=False,
-                pad_token_id=self.tokenizer.eos_token_id,
+                **gen_kwargs
             )
 
         input_tokens = int(inputs["input_ids"].shape[1])
@@ -121,22 +130,11 @@ def make_backend() -> LLMBackend:
     raise ValueError("LLM_MODE musi mieć wartość 'local' albo 'api'")
 
 
-def append_event(path: str, result: Generation, status: str = "ok") -> None:
-    event = {
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "status": status,
-        **{k: v for k, v in asdict(result).items() if k != "text"},
-    }
-    with open(path, "a", encoding="utf-8") as file:
-        file.write(json.dumps(event, ensure_ascii=False) + "\n")
-
-
 if __name__ == "__main__":
     import dotenv
 
     dotenv.load_dotenv()
     backend = make_backend()
-
     result = backend.generate(
         system="Odpowiadaj krótko i jasno po polsku.",
         user="Wyjaśnij, czym jest token w modelu językowym.",
@@ -150,7 +148,3 @@ if __name__ == "__main__":
         f"wyjście: {result.output_tokens} tokenów | "
         f"czas: {result.latency_s:.2f} s"
     )
-
-    os.makedirs("logs", exist_ok=True)
-    append_event("../../logs/events.jsonl", result)
-    print("\n[OK] Zapisano log do logs/events.jsonl")
