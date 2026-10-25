@@ -1,0 +1,149 @@
+configuration,run,text,output_tokens,latency_s
+A,1,"Aplikacja, która pomaga studentom planować naukę, może mieć następujące nazwy:
+
+1. ""NaukaPlaner""
+2. ""NaukaPomagacz""
+3. ""NaukaPlanowanie""
+4. ""NaukaMamia""
+
+Jednezdanych opis:
+- Aplikacja umożliwia użytkownikom planowanie nauki.
+- Użytkownicy mogą zdefiniować przedmioty, skupienia, czasu i inne elementy naukowe.
+- Aby dostarczyć informacje, aplikacja może wymagać kontaktu z profesjonalnym naukowcą lub zgodnie z regulacją, aby dostosować się do potrzeb użytkown",160,7.11
+A,2,"Aplikacja, która pomaga studentom planować naukę, może mieć następujące nazwy:
+
+1. ""NaukaPlaner""
+2. ""NaukaPomagacz""
+3. ""NaukaPlanowanie""
+4. ""NaukaMamia""
+
+Jednezdanych opis:
+- Aplikacja umożliwia użytkownikom planowanie nauki.
+- Użytkownicy mogą zdefiniować przedmioty, skupienia, czasu i inne elementy naukowe.
+- Aby dostarczyć informacje, aplikacja może wymagać kontaktu z profesjonalnym naukowcą lub zgodnie z regulacją, aby dostosować się do potrzeb użytkown",160,7.07
+A,3,"Aplikacja, która pomaga studentom planować naukę, może mieć następujące nazwy:
+
+1. ""NaukaPlaner""
+2. ""NaukaPomagacz""
+3. ""NaukaPlanowanie""
+4. ""NaukaMamia""
+
+Jednezdanych opis:
+- Aplikacja umożliwia użytkownikom planowanie nauki.
+- Użytkownicy mogą zdefiniować przedmioty, skupienia, czasu i inne elementy naukowe.
+- Aby dostarczyć informacje, aplikacja może wymagać kontaktu z profesjonalnym naukowcą lub zgodnie z regulacją, aby dostosować się do potrzeb użytkown",160,7.17
+A,4,"Aplikacja, która pomaga studentom planować naukę, może mieć następujące nazwy:
+
+1. ""NaukaPlaner""
+2. ""NaukaPomagacz""
+3. ""NaukaPlanowanie""
+4. ""NaukaMamia""
+
+Jednezdanych opis:
+- Aplikacja umożliwia użytkownikom planowanie nauki.
+- Użytkownicy mogą zdefiniować przedmioty, skupienia, czasu i inne elementy naukowe.
+- Aby dostarczyć informacje, aplikacja może wymagać kontaktu z profesjonalnym naukowcą lub zgodnie z regulacją, aby dostosować się do potrzeb użytkown",160,9.66
+A,5,"Aplikacja, która pomaga studentom planować naukę, może mieć następujące nazwy:
+
+1. ""NaukaPlaner""
+2. ""NaukaPomagacz""
+3. ""NaukaPlanowanie""
+4. ""NaukaMamia""
+
+Jednezdanych opis:
+- Aplikacja umożliwia użytkownikom planowanie nauki.
+- Użytkownicy mogą zdefiniować przedmioty, skupienia, czasu i inne elementy naukowe.
+- Aby dostarczyć informacje, aplikacja może wymagać kontaktu z profesjonalnym naukowcą lub zgodnie z regulacją, aby dostosować się do potrzeb użytkown",160,13.12
+B,1,"Aplikacja, która pomaga studentom planować naukę, może mieć następujące nazwy i jednozakonowane opisy:
+
+Nazwa: NaukaPlan
+
+Jednozakonowane opis:
+NaukaPlan to aplikacja, która umożliwia użytkownikom planowanie nauki w kierunkach specyficznych. Aby dostarczyć najlepsze materiały i instrukcje, aplikacja obsługuje systemy naukowe, które są zgodne z potrzebą naukowej studenta. Opcjonalnie, aplikacja może zawierać platformę online dla przesyłania materiałów, aby student mógł łatwo dostarczać się do informacji.",157,7.55
+B,2,"Aplikacja, która pomaga studentom planować naukę, może mieć następujące nazwy:
+
+1. ""NaukaPlaner""
+2. ""PomaganieStudentaNaNauku""
+3. ""ZarządzanieNauką""
+4. ""NaukaPlanowa""
+5. ""NaukaPlaneria""
+
+Jednezdania opisujące to aplikację może być:
+
+- **Konsultacja**: Oto sposób, jak aplikacja pomaga studentom w skonstruowaniu planu nauki.
+  - **Formularz**: Student może podać informacje o swoim przedmiotach lub kierunkach naukowych.
+  - **Rozszerzenia**: A",160,13.24
+B,3,"Nazwa: ""NaukaPlan""
+
+Jednezdanie opisu:
+NaukaPlan to aplikacja, która帮学生规划和管理他们的学术生活，包括课程选择、时间安排和资源利用。该应用提供个性化建议，帮助学生更好地适应课程要求，并确保他们有足够的时间完成学业。此外，它还支持学生与导师和其他同学进行实时沟通，以便在学习过程中获得指导和支持。",89,15.18
+B,4,"Aplikacja, która pomaga studentom planować naukę, może mieć następujące nazwy i jednozdanewo wejściowe:
+
+1. ""NaukaPlaner""
+2. ""PomaganieStudentomNauki""
+3. ""ZarządzanieNauką""
+4. ""NaukaPlaner""
+5. ""NaukowaPlanera""
+
+Jednozdanewo wejściowe:
+- Wymaga użytkownika do zainstalowania aplikacji
+- Znajduje się w katalogu aplikacji
+- Czytaje informacje o naukach, które są planowane dla użytkownika
+
+Ten projekt jest zaprojektowany tak, aby pom",160,25.17
+B,5,"Nazwa: ""NaukaPlan""
+
+Jednozdaneowy opis: NaukaPlan jest aplikacją, która pomaga studentom w planowaniu nauki. Aby utworzyć plan nauki, użytkownik może podać informacje o przedmiotach, które chce nauczyć się, jakie konsultacje lub materiały potrzebują. Oto kilka z najważniejszych funkcji:
+
+1. Zapisywanie danych dotyczących przedmiotów naukowych.
+2. Pamiętania dotyczące konsultacji i materiałów.
+3. Użycie API do automatyzowania procesu planowania nauki.
+4. Wysłanie informacji o aktualnych kursach i",160,25.75
+C,1,"Aplikacja, która pomaga studentom planować naukę, może zaznaczyć następujące informacje:
+
+1. **Czasu**: Aby dostarczyć odpowiednie planowanie nauki, aplikacja może sprawdzać aktualne rokowe planowanie lub przewidzieć planowanie dla roku wydarzeń.
+
+2. **Rozmiar**: Aplikacja może mieć rozmiar określony, a jego widok może zawierać informacje o planowanym przedsiębiorstwie, kierunkach nauki, klasie, materiały edukacyjne i inne potrzebne informacje.
+
+3. **Jednostka**: Podstawowe funkcje mogą być zas况j",160,20.53
+C,2,"Aplikacja, która pomaga studentom w planowaniu nauki, może mieć następujące informacje:
+
+- **Nazwa:** ""NaukaPlan""
+- **Jednosteką pracy:** Aplikacja to standardowa platforma zgodnie z specyfikacjami klasycznych w programach nauki.
+- **Miejsce pracy:** Czyta się przez osób, które planują naukę w wydawanej imieniach lub w obecnej lokalizacji.
+- **Metody pracy:** Zaznaczony jest różne metody pracy, takie jak naukowe, kursy, online konservatywy, kursy w kierunkach naukowych,",160,8.21
+C,3,"Nazwa: ""Pomoc Szkoleniowy""
+
+Jednezdanewo:
+- Pamiętaj, że to jest tylko podstawowa wersja, aby otrzymać najlepszy wynik
+- Aby uzyskać dostawę do wszystkich sklepów, potrzebujesz zgodnego użytkownika (2-3 godziny)
+- Zostaniesz zgodny z normami pracy i wymieniami kluczowe
+
+Opis: Pomoc Szkoleniowy to platforma, która pozwala studentom planować naukę za pomocą narzędzi takie jak online kursy, programy nauki, video-kursy i więcej. Możesz jednak przekazać dostęp do niektórych sk",160,24.85
+C,4,"Nazwa: Nauka Planowanie
+
+Jednostki:
+- JED (Język Edukacyjny)
+- KSI (Kursy I Wyznania)
+
+Opis:
+Nauka Planowanie to program, który jest zaprojektowany do pomocy studentów w planowaniu i wykorzystaniu w zakresie nauki metod naukowych i softwarystycznych. Użyta jest w dziedzinach naukousciennych, specjalizacji naukowej i naukowych pracach, aby pomóc studentom w przestrzeganiu kierunków naukowych i zarządzaniu wokół nich. Program umożliwia przechodzenie przed unikacją zadane",160,20.59
+C,5,"Nazwa: NaukaPlan
+
+Jednozdaniowy opis: Aplikacja pomaga studentom planować naukę, zamiast tylko rozmawiać o konkretnym zakresie. Opcjonalnie możesz dodać opcje, które sprawdzysz w swojej naukowej akademii.",76,4.46
+D,1,"Nazwa: ""Study Planning Tool"" (Studystwo Progresjaowa Klasa)
+
+Jednostki:
+- **Jednoradnik**: Pomaga studentom zebrać planowanie naukowego rodu za pomocą pionowych metod wiedzących, zaimplementowanego dozwoleniem.
+- **Dziadki**: Aby zapewnić stresność do pracy na tematu studynnej, odsługujone przez wielokrotnie rozmieszczone odpowiedzialne dla podziału pracy na kryterii.
+
+Jednozdanie: 
+- **Wizualny źródło danych** - Kiedy nie wiemy więcej więcej szczegółów od czasu dnia niż",160,8.13
+D,2,"Nazywanie tego typu aplikacji może wskazująć, że to aplikacja zapraszająca użytkownikom do wyboru akademickiego projektów. Jednoszanadnio wymaga się użycia kalkulacyjnych (np. Microsoft Excel lub LibreOffice Calc) do podsumowania informacji nadmiernych lub do analizy podczas wysłania wyników. 
+
+Ponadto, podmienka ""naukę"" w przeciwnym kontekście musi być odpowiednie dla tego typeczowego oficjalnego dokumentu, który jest często dostępny w kontekście poszytywanych unionskich akademii.",152,20.52
+D,3,"Aplikacja tylnej nazywa się EduKlub, która帮学生规划他们的学术之旅。主要功能包括课程选择和资源管理、社交功能以及校友网络链接，让每个学生都能轻松管理和维护与导师和学弟姐妹之间的联系并参加相关的学术活动和讨论小组。",65,9.17
+D,4,"Nazwa: ""Mentorship Academy"" 
+
+Jednezdanicowy opis: Mentaře Academy (MA) - to zastosowanego modelu naukowego i akademickiego, który pomaga studentom i naukowcom rozwiązać problemy, rozliczyć się ze zainteresowanych przedmiotami, i stawiać klasy do nauki na konkretny poziom. MA zapewnia dostęp do profesjonalnego kontroli nad obrazem nauki w celu upragnienia, realizacja strategii zastosowania nauki i dostosowania odpowiedniego programowe wymagania do jednego zdrowym projektu.",154,7.87
+D,5,"Jedna z najważniejszych narzędzi, które korzystają zamiast nauki podczas walki z moimi zdrowikiem są narzędzie oprogramowane dla pomocy, aby zapewnić, jak w pełnym zakresie, odwiedzanie dojrzawsze miejsca naukowe oraz dokładne analiza wydarzeń i kontekstu. Oznacza to, że można utworzyć rozmową z osobistym doceniem czyjegoś przedstawicielem, takiego jak konkretny kurs lub obecnie dostępnej w swoim kontekście lokalności szkolej. Jednakże, w przypadku osób z nieodpowiednictwy, może być nies",160,8.24
